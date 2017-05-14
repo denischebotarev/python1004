@@ -7,3 +7,4 @@ lang = 'ru-en'
 r = requests.post(url, data={'key': key, 'text': text, 'lang': lang})
 
 print(r.text)
+print(r)
