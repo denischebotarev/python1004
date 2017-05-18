@@ -1,4 +1,4 @@
-def checkio(*data):
+def checkio(data):
     new_list = []
     for arg in data:
         if data.count(arg) >= 2:
