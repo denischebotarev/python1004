@@ -1,7 +1,13 @@
-x = 10
+def get_talk(talk_type='shout'):
+    def shout(word='yes'):
+        return word.upper()+'!!!'
 
-def new(y=x):
-    y += x
-    return y
+    def whisper(word='yes'):
+        return word.lower()+'...'
 
-print(new())
+    if talk_type == 'shout':
+        return shout
+    else:
+        return whisper
+
+print(get_talk('whisper')('gfdg'))
